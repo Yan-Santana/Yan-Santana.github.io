@@ -12,6 +12,11 @@ export default defineConfig(({ mode }) => ({
   base: "/",
   build: {
     outDir: "build",
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
   },
   resolve: {
     alias: {
